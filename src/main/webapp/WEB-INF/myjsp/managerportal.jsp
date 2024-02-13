@@ -1,58 +1,97 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>STEEl FABRICATION</title>
-<style>
+    <title>Products Page</title>
+    <style>
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
 
-       .card {
-                   display: flex;
-                   justify-content: space-between;
-                   padding: 10px;
-                   background-color: #000000;
-               }
-       .buttons-container {
-                   display: flex;
+    .rect {
+        margin-top: 80px;
+        width: 100%;
+        background-color: #f2f2f2;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-                   align-items: center;
-                   margin-top: 20px;
-               }
+    .header-text {
+        font-size: 24px;
+    }
 
+    .button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    .btn-red {
+            background-color: #dc3545;
+            color: white;
+        }
 
-       .footer {
-           width: 100%;
-           bottom:0;
-           text-align: center;
-           padding: 10px 0;
-           position: fixed;
-       }
+    .button:hover {
+        background-color: #0056b3;
+    }
+    .box{
+        padding:40px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .heading {
+        color: white;
+    }
+
     </style>
-<link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
-	rel="stylesheet">
-<link href="mycss/steel.css" rel="stylesheet">
+
 </head>
 <body>
-	<div class="card">
-		<h4>
-        	<a href="index" class="navbar-brand"> Steel Fabrication,Welcome </a>
-        </h4>
-	</div>
-	<div class="admin">
+	<header>
+            <div class="header-text">
+                Steel Fabrication, Welcome
+            </div>
+     </header>
+     <div style="display: flex; flex-direction: column; min-height: 100vh;">
+	<div class="box">
         <th><h1>Manager Portal</h1></th>
-        <td><a href="index" class="btn btn-danger"> Sign out </a></td>
+        <td><a href="index" class="button btn-red"> Sign out </a></td>
     </div>
 
     <div class="buttons-container">
-        <a href="admin" class="btn btn-primary"> View Customers </a>
-        <a href="admin" class="btn btn-primary"> View Staff </a>
-        <a href="admin" class="btn btn-primary"> add Staff </a>
-        <a href="admin" class="btn btn-primary"> View Customers </a>
-        <a href="admin" class="btn btn-primary"> View Staff </a>
-        <a href="admin" class="btn btn-primary"> add Staff </a>
-        <a href="admin" class="btn btn-primary"> add Staff </a>
+        <a href="admin" class="button"> View Customers </a>
+        <a href="admin" class="button"> View Staff </a>
+        <a href="admin" class="button"> add Staff </a>
+        <a href="admin" class="button"> View Customers </a>
+        <a href="admin" class="button"> View Staff </a>
+        <a href="admin" class="button"> add Staff </a>
+        <a href="admin" class="button"> add Staff </a>
 
     </div>
-	<div class = "footer">
-	<c:import url="myfooter.jsp" />
-	</div>
+	<footer>
+                <div class="copyright-text">
+                    &#169; 2024 Ganavenkat
+            </div>
+        </footer>
 </body>
 </html>

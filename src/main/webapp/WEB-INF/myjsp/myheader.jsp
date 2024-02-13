@@ -24,16 +24,6 @@
     					<a href="/showMyOrdersList" class="nav-link">Show My Orders</a>
     				</h4>
     			</li>
-    			<li class="nav-item active">
-    				<h4>
-    					<a href="/login" class="nav-link">Login</a>
-    				</h4>
-    			</li>
-    			<li class="nav-item active">
-    				<h4>
-    					<a href="/myregister" class="nav-link">Register</a>
-    				</h4>
-    			</li>
     		</ul>
     	</div>
 </nav>

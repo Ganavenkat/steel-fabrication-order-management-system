@@ -40,6 +40,7 @@ public class FinalProjectCustomerApplication {//implements CommandLineRunner
 	private StaffServicesImpl staffServices;
 	public static void main(String[] args) {
 		SpringApplication.run(FinalProjectCustomerApplication.class, args);
+		System.out.println("hi");
 	}
 	
 	//@Override
@@ -73,7 +74,7 @@ public class FinalProjectCustomerApplication {//implements CommandLineRunner
 //		List<Review> reviewList=cust.getReviews();
 //	    reviewList.forEach(System.out::println);   
 //		
-//		
+//		v
 //		Product product=proService.findById(10);
 //		System.out.println(proService.findById(10));
 //		List<Review> reviewList1 = product.getReviews();

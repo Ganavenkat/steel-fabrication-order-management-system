@@ -15,6 +15,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -39,17 +40,17 @@ public class Order {
 	private int qty;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	@Temporal(TemporalType.DATE)
 	@Column(name = "o_date")
+	@CreationTimestamp
 	private Date oDate;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	@Temporal(TemporalType.DATE)
+	@CreationTimestamp
 	@Column(name = "d_date")
 	private Date ddate;
 	
 	@Column(name = "status")
-	private String status;
+	private String status = "Ordered";
 
 //	  @ManyToOne
 //	  @JoinColumns({
@@ -61,7 +62,7 @@ public class Order {
 	private int staffId;
 	
 	@Column(name = "paymentmode")
-	private String paymentmode;
+	private String paymentmode = "cash";
 	
 	public Order(int oId, Product product, int cId, int qty, Date oDate, Date ddate, String status, int staffId,
 			String paymentmode) {

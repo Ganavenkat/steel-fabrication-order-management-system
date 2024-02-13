@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fa781bc-b315-467a-a7a7-baa9f5ecf82e" name="Changes" comment="" />
+    <list default="true" id="8fa781bc-b315-467a-a7a7-baa9f5ecf82e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/addreview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/orderslist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/ordersuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/ratingsuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/showcart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/showreviews.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/viewProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/viewcustomers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/FinalProjectCustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/FinalProjectCustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/etities/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/etities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/etities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/etities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/etities/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/etities/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/CustomerServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/CustomerServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/CustomerServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/CustomerServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/OrderServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/OrderServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/OrderServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/OrderServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/services/ReviewServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/project/services/ReviewServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/adminportal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/adminportal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/customerportal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/customerportal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/loginportal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/loginportal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/managerportal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/managerportal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/myheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/myheader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/shop.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/myjsp/shop.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/FinalProjectCustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/FinalProjectCustomerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/etities/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/etities/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/etities/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/etities/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/etities/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/etities/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/CustomerServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/CustomerServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/CustomerServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/CustomerServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/OrderServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/OrderServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/OrderServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/OrderServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/ReviewServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/ReviewServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/services/ReviewServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/services/ReviewServices.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +60,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,15 +83,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FinalProjectCustomerApplication.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1037766/Downloads/Lab3/Lab3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FinalProjectCustomerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.project.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1037766/Downloads/Day-19version1.2/MyEurekaServer&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="project" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.project.FinalProjectCustomerApplication" />
+      <module name="final_project_customer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,5 +121,16 @@
       <updated>1707236377470</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

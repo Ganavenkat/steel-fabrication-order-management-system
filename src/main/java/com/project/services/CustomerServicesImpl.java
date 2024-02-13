@@ -96,26 +96,10 @@ public class CustomerServicesImpl implements CustomerServices{
 		customerDao.save(cust);
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Override
+	public void deleteById(int id) {
+		customerDao.deleteById(id);
+	}
+
+
 }

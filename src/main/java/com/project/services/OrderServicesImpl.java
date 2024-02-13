@@ -1,6 +1,8 @@
 package com.project.services;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -84,13 +86,57 @@ public class OrderServicesImpl implements OrderServices{
 		return orders;
 	}
 
+
+
 	@Override
 	public List<Order> findByCId(int cid) {
 		//List<Order> orders = orderDao.findById(cid);
-		List<Order> orders = orderDao.findByStaffId(cid);
+		List<Order> orders = new ArrayList<>();
+		List<Order> ordersList = orderDao.findAll();
+
+		for(var s:ordersList)
+		{
+			if(s.getcId() == cid)
+			{
+				orders.add(s);
+			}
+		}
 		System.out.println(orders);
 		return orders;
 	}
+
+
+	@Override
+	public void placeOrder(Map<Integer, Product> myCartMap,Integer id) {
+
+		for(Product product: myCartMap.values())
+		{
+//			Order newOrder = new Order();
+//			newOrder.se(product.getId());
+//			newOrder.setProduct(product);
+//			newOrder.setQty(product.getQty());
+////			newOrder.setoDate(product.getoDate());
+//			newOrder.setStatus("Ordered");
+//			newOrder.setPaymentmode("cash");
+////		newOrder.setsId(orderServices.getMinStaffId());
+////		Order placedOrder = orderServices.save(newOrder);
+//			orderDao.save(newOrder);
+
+			Order order = new Order();
+			order.setcId(id);
+			order.setQty(product.getQty());
+			order.setPaymentmode("Cash on delivery");
+			order.setProduct(product);
+			order.setstaffId(1);
+			order.setStatus("ordered");
+			orderDao.save(order);
+		}
+		myCartMap.clear();
+
+		System.out.println("place order");
+
+	}
+
 
 
 	

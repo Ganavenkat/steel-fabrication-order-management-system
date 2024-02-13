@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.project.dao.ReviewDao;
 import com.project.etities.Review;
 
+import java.util.List;
+
 @Transactional
 @Service
 public class ReviewServiceImpl implements ReviewServices{
@@ -21,6 +23,10 @@ public class ReviewServiceImpl implements ReviewServices{
 		return reviewNew;
 	}
 
-	
+	@Override
+	public List<Review> findAll() {
+		return reviewDao.findAll();
+	}
+
 
 }

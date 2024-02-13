@@ -15,4 +15,6 @@ public interface CustomerServices {
 	Customer authenticate(String email, String password);
 	void addOrder(Order order);
 	void transaction(int amount, int cid);
+
+	void deleteById(int id);
 }

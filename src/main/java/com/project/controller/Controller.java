@@ -2,6 +2,7 @@ package com.project.controller;
 
 import com.oracle.wls.shaded.org.apache.xpath.operations.Mod;
 import com.project.etities.Customer;
+import org.dom4j.rule.Mode;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,15 +25,29 @@ public class Controller {
     @GetMapping("/")
     public ModelAndView shop()
     {
-        return new ModelAndView("customerportal");
+        return new ModelAndView("addreview");
     }
+
+    @GetMapping("/vp")
+    public ModelAndView view()
+    {
+        return new ModelAndView("viewProduct");
+    }
+
+    @GetMapping("/try")
+    public ModelAndView try2()
+    {
+        return new ModelAndView("try1");
+    }
+
+
+
 
     @GetMapping("/login")
     public ModelAndView login()
     {
         //session.setAttribute("name",name);
-        ModelAndView m = new ModelAndView("loginportal");
-        return m;
+        return new ModelAndView("loginportal");
     }
 
     @GetMapping("/admin")
@@ -69,7 +84,8 @@ public class Controller {
             ModelAndView m = new ModelAndView("adminportal");
             return m;
         }
-        return new ModelAndView("index");
+        else throw new RuntimeException("Username or Email is incorrect");
+
     }
 
     @PostMapping("/managerloginServlet")
@@ -80,7 +96,7 @@ public class Controller {
             ModelAndView m = new ModelAndView("managerportal");
             return m;
         }
-        return new ModelAndView("index");
+        else throw new RuntimeException("Username or Email is incorrect");
     }
 
     @GetMapping("/myregister")
@@ -101,4 +117,6 @@ public class Controller {
 //    {
 //        return new ModelAndView("customerlogin");
 //    }
+
+
 }

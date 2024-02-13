@@ -4,19 +4,14 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
+import com.project.etities.Review;
+import com.project.services.ReviewServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import com.project.etities.Customer;
 import com.project.etities.Order;
@@ -27,12 +22,22 @@ import com.project.services.OrderServices;
 import org.springframework.web.servlet.ModelAndView;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import javax.servlet.http.HttpSession;
+
 @CrossOrigin
 @RequestMapping("/customers")
 @RestController
 public class CustomerController {
 	@Autowired
 	private CustomerServices custService;
+
+	@Autowired
+	ReviewServices reviewServices;
+
+	@Autowired
+	private OrderServices orderServices;
+
+	private Integer id;
 	
 	
 //	@GetMapping("/customers/{id}")
@@ -89,15 +94,32 @@ public class CustomerController {
 	@GetMapping("/continueLogin")
     public ModelAndView continuelogin()
     {
-        return new ModelAndView("customerlogin");
+        return new ModelAndView("customerlogin1");
     }
 
-	@GetMapping("/continueshopping")
-	public ModelAndView continueShopping()
-	{
-		return new ModelAndView("index");
-	}
+//	@GetMapping("/continueshopping")
+//	public ModelAndView continueShopping()
+//	{
+//		return new ModelAndView("index");
+//	}
+//	@GetMapping("/admin")
+//	public ModelAndView admin()
+//	{
+//		ModelAndView m =new ModelAndView("redirect:adminloginServlet");
+//		return m;
+//	}
 
+	@GetMapping("/adminloginServlet")
+	public ModelAndView adminAuthentication(@RequestParam String email,@RequestParam String password)
+	{
+		if(email.equals("gana@gmail.com") && password.equals("143143"))
+		{
+			ModelAndView m = new ModelAndView("adminportal");
+			return m;
+		}
+		else throw new RuntimeException("Username or Email is incorrect");
+
+	}
 	
 
 
@@ -114,15 +136,14 @@ public class CustomerController {
 	@PostMapping("/customerloginServlet")
 	public ModelAndView authenticate(@RequestParam String email,@RequestParam String password){
 		Customer cust = custService.authenticate(email, password);
-//		if(cust == null) throw new RuntimeException("Wrong email id or password");
+		if(cust == null) throw new RuntimeException("Wrong email id or password");
+		id = cust.getId();
 //		HashMap<String, Object> ht = new HashMap<String, Object>();
 //		ht.put("status", new String("success"));
 //		ht.put("data", cust);
 //		return ResponseEntity.ok(ht);
 
 		return new ModelAndView("customerportal");
-
-
 	}
 
 	@PostMapping("/update")
@@ -146,8 +167,43 @@ public class CustomerController {
 		return null;
 		
 	}
-	
-	
+
+
+	@GetMapping("/showMyOrdersList")
+	public ModelAndView showMyOrderslist(Model model, HttpSession session){
+		System.out.println("-------BookStoreController--showMyOrdersList()---------");
+		List<Order> orderList=orderServices.findByCId(id);
+		session.setAttribute("MyOrderList",orderList);
+		return new ModelAndView("orderslist");
+	}
+
+	@PostMapping("/continueshopping")
+	public ModelAndView continueShopping() {
+		return new ModelAndView("customerportal");
+	}
+
+	@GetMapping("/showMyRatings")
+	public ModelAndView showmyreviews(HttpSession session)
+	{
+		List<Review> reviews = reviewServices.findAll();
+		session.setAttribute("reviews",reviews);
+		return new ModelAndView("showreviews");
+	}
+
+	@GetMapping("/viewcustomers")
+	public ModelAndView view(HttpSession session)
+	{
+		List<Customer> customers = custService.findAll();
+		session.setAttribute("customers",customers);
+		return new ModelAndView("viewcustomers");
+	}
+
+	@GetMapping("/delete")
+	public ModelAndView delete(@RequestParam int id)
+	{
+		custService.deleteById(id);
+		return new ModelAndView("viewcustomers");
+	}
 	
 	
 	

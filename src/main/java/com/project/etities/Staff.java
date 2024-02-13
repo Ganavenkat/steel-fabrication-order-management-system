@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,6 +25,7 @@ public class Staff {
 	@Column(name="staff_id")
 	private int id;
 	
+	@Getter
 	private String firstName;
 	private String lastName;
 	private String phone;
@@ -42,9 +44,7 @@ public class Staff {
 		this.id = staff_id;
 		System.out.print("staff is in setter method    ="+this.id);
 	}
-	public String getFirstName() {
-		return firstName;
-	}
+
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
